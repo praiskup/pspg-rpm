@@ -1,13 +1,12 @@
-Summary:	a unix pager optimized for psql
+Summary:	A unix pager optimized for psql
 Name:		pspg
 Version:	1.6.3
-Release:	2%{?dist}
+Release:	3%{?dist}
 License:	BSD
 URL:		https://github.com/okbob/%{name}
 Source:		https://github.com/okbob/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:	ncurses-devel readline-devel
 BuildRequires:	gcc
-Requires:	ncurses readline
 
 
 %description
@@ -39,6 +38,9 @@ columns, and lot of color themes are included.
 
 
 %changelog
+* Thu Feb 14 2019 Pavel Raiskup <praiskup@redhat.com> - 1.6.3-3
+- review updates from rhbz#1677259
+
 * Thu Feb 14 2019 Pavel Raiskup <praiskup@redhat.com> - 1.6.3-2
 - cleanup before Fedora proposal
 
